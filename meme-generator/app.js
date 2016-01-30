@@ -19,7 +19,6 @@ var main = function() {
         $('img').attr('src', text_value);
     });
 
-
 }
 
 $(document).ready(main);
