@@ -22,3 +22,11 @@ $(".help").click(function(){
 });
 
 
+// you can also finish this task using some smart methods
+
+//$('.dropdown').click(function(){
+//    $(this).children().next().toggle();
+//    $(this).siblings().find('ul').hide();
+//});
+
+
