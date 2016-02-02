@@ -5,7 +5,7 @@
 var main = function() {
 
     $( "#top-text" ).keyup(function() {
-        var text_value = $("#top-text").val()
+        var text_value = $("#top-text").val();
         $('h1.top-caption').text(text_value);
     });
 
