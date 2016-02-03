@@ -1,0 +1,26 @@
+Choose a Hosting Service and Domain Name
+
+If you google “domain name” or “website hosting,” you’ll find dozens of popular services ready to host your website. In general, an unclaimed domain name will cost anywhere between $5 - $15 per year, while hosting runs anywhere between $3 - $8 a month. Many hosting services will offer a free domain with purchase of hosting. There are lots of useful articles comparing different services: here are just a few:
+
+    PC Magazine: The Best Web Hosting Services for 2015
+    Who is Hosting This: Announcing the best web hosts of 2015
+    5 Best Affordable Web Hosting Companies
+
+For this project, we will be using GoDaddy to demonstrate how to host your website. Founded in 1997, GoDaddy is a huge, publically-traded corporation, and while it’s not without controversy (for its SuperBowl commercials, for example) its size and budget have made it easy to use and created a lot of accessible documentation around setting it up.
+
+Most big website hosting services (GoDaddy, HostGator, DigitalOcean, 1&1, Dreamhost, and many others) user very similar workflows, so feel free to choose your own hosting provider!
+
+First head to GoDaddy, and purchase a hosting plan. You can buy as little 3 months of hosting - the Economy plan will serve us just fine. GoDaddy also routinely offers discount codes on its services, so make sure to look some up! If you buy an annual plan, GoDaddy will include a free domain – however, there are also ongoing .99 cent domain name promotions. When asked to choose between Linux and Windows hosting, choose Linux. If you’re asked to create your FTP login and password, note that information! You’ll be using it shortly to upload your files.
+
+If you plan on learning Ruby on Rails, note that GoDaddy doesn’t host Rails websites; we’ll be moving to the free Heroku services for this. So you should refrain from making any big investment into website hosting for now.
+
+In order to get your files from your computer up to the GoDaddy servers, we’re going to use FTP – file transfer protocol – a method of moving files through the internet. One of the most popular (and free!) FTP clients is FileZilla, although there are lots of other good alternatives. You can download FileZilla here.
+
+On the GoDaddy website, navigate over to your hosting control panel (Cpanel.) Here’s a really useful article to link up FileZilla to your GoDaddy account. Your host is yourWebsite IP address, which you can find on the top right of the page; use 21 for ‘Port.”
+
+Fortunately, you won’t have to enter all that data again. The next time you use FileZilla, you can just click “Quickconnect” for your last connection, or click the down arrow button next to “Quickconnect” to see a list of recent connections:
+
+We’re almost there! In FileZilla, in the bottom-right window, navigate over to the “public_html” folder. This folder may have some default GoDaddy files. (You can delete them, although we’d recommend leaving the “404.shtml” file in the folder - it’s the default “page not found” file.) Now, drop the contents of your website into this folder. Make sure your homepage is named index.html.
+
+Navigate to your domain name, and you should see your website live.
+
